@@ -7,10 +7,12 @@ function App() {
   return (
     <>
       <Router>
+        <Header />
 
 
         <Routes>
           <Route exact path ='/' element={Home} />
+
 
 
 
