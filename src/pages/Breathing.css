@@ -1,0 +1,19 @@
+* {
+    background-color: #DDFAC0;
+}
+
+button {
+    margin: auto;
+    padding: 10px;
+    margin-top: 10%;
+    margin-bottom: 0;
+    background: none;
+    background-color: transparent;
+    border-radius: 30%;
+}
+
+.breathe {
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+}
