@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import "./Recipes.css"
 import { Link } from 'react-router-dom';
 function Surroundings() {
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(5);
+  const [minutes, setMinutes] = useState(5);
+  const [seconds, setSeconds] = useState(0);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [timerUp, setTimerUp] = useState(false);
   const [inputValue, setInputValue] = useState('');

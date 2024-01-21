@@ -10,7 +10,7 @@ function End() {
   
         {/* Central Start Button as a Link */}
         <Link to="/">
-          <button className="start">Play Again</button>
+          <button className="start" style={{ backgroundColor: '#4CAF50', color: 'white' }}>Play Again</button>
         </Link>
       </div>
     );
