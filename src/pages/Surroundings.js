@@ -8,7 +8,7 @@ function Surroundings() {
   const [timerUp, setTimerUp] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [showWow, setShowWow] = useState(false);
-  const backgroundColor = useState('#DDFAC0');
+  const [backgroundColor, setBackgroundColor] = useState('#DDFAC0');
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -61,17 +61,24 @@ function Surroundings() {
 
   return (
     <div style={{ backgroundColor, border: '1px solid #ccc', height: '100vh', overflow: 'hidden' }}>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', margin: 0 }}>
+    <div style={{ fontFamily: 'Rubik, sans-serif', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', margin: 0 }}>
+    <div style={{ 
+    padding: '50px', 
+    backgroundColor: '#276E8E', 
+    display: 'flex', 
+    flexDirection: 'column', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    borderRadius: '30px',
+    boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)' // Add this line for the shadow
+}}>
         <div style={{ padding: '50px', backgroundColor: '#276E8E', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius: '30px'}}>
         {!timerUp && (
             <div style={{ textAlign: 'center' }}>
-
-            <div style={{ fontSize: '36px', marginBottom: '40px', color: 'white' }}>Your Surroundings</div>
-            <div style={{ fontSize: '20px', marginBottom: '20px', color: 'white' }}>Your working and living space plays a large role in your mental abilities.<br />If you feel like your space is cluttered, take a quick 10 minutes to tidy up!</div>
+            <div style={{ fontSize: '36px', marginBottom: '40px', fontFamily: 'Rubik, sans-serif', color: 'white' }}>Your Surroundings</div>
+            <div style={{ fontSize: '20px', marginBottom: '20px', fontFamily: 'Rubik, sans-serif', color: 'white' }}>Your working and living space plays a large role in your mental abilities.<br />If you feel like your space is cluttered, take a quick 10 minutes to tidy up!</div>
             <div style={{ fontSize: '48px', color: '#333', color: 'white' }}>{`${pad(minutes)}:${pad(seconds)}`}</div>
-
-            
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginRight: '80px' }}>
                 <button onClick={startTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Start</button>
                 <button onClick={pauseTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Pause</button>
                 <button onClick={doneCleaning} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>I'm done!</button>
@@ -97,6 +104,7 @@ function Surroundings() {
             {showWow && <div style={{ fontSize: '18px', marginTop: '10px', color: 'white' }}>Wow! {inputValue} is some hard stuff. Well done.</div>}
             </div>
         )}
+        </div>
         </div>
     </div>
     <div style={{ position: 'fixed', bottom: '50px', right: '50px', zIndex: '999' }}>
