@@ -8,7 +8,7 @@ function Surroundings() {
   const [timerUp, setTimerUp] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [showWow, setShowWow] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState('#DDFAC0');
+  const backgroundColor = useState('#DDFAC0');
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -104,7 +104,6 @@ function Surroundings() {
             {showWow && <div style={{ fontSize: '18px', marginTop: '10px', color: 'white' }}>Wow! That's some hard stuff. Well done.</div>}
             </div>
         )}
-        </div>
         </div>
     </div>
     <div style={{ position: 'fixed', bottom: '50px', right: '50px', zIndex: '999' }}>
