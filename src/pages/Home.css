@@ -5,7 +5,7 @@
     font-size: '18px';
     background-color: '#4CAF50'; 
     color: 'white';
-    border-radius: '50px';
+    border-radius: '50%';
     cursor: 'pointer';
     padding: 100px 150px;
 }
@@ -15,6 +15,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* 100% of the viewport height */
-    backgroundColor: "#90EE90";
+    height: 90vh; /* 100% of the viewport height */
+    background-color: #DDFAC0;
+}
+
+* {
+    font-family: 'Sora', sans-serif;
 }

@@ -1,5 +1,3 @@
-
-
 button {
     margin: auto;
     padding: 10px;
@@ -14,7 +12,12 @@ button {
 .breathe {
     margin: 0;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDFAC0;
+    padding-top: 30px;
 }
+
 .continueButton {
     position: fixed;
     bottom: 55px; /* Adjust the value to move it higher */

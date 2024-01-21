@@ -40,27 +40,23 @@ function Breathing () {
       }
 
     return (
-        <>
         <div className='breathe'>
-            <h3>Let’s take some time to ground ourselves.</h3>
+            <h3>Let's take some time to ground ourselves.</h3>
             <p> Feel free to use your own grounding method or use the breathing tool below:</p>
             <p>Press and hold the button as you inhale and the circle expands. To exhale, let go of the button and press again as the circle shrinks.</p>
             <p>No pressure! Breathe in and out at your own pace!</p>
-            {/* <p>Guided Breathing: Press down to breathe and press again to exhale. no pressure! control your own breathing</p> */}
             <button onMouseDown={mousedown} onMouseUp={mouseup}>breathe</button>
-
         
-            <Stage width={window.innerWidth} height={window.innerHeight} style={{ margin: 0 }}>
+            <Stage width={window.innerWidth} height={window.innerHeight * 0.75}>
                 <Layer>
-                    <Circle x={window.innerWidth / 2} y={window.innerHeight / 2} radius={size} fill={color} />
+                    <Circle x={window.innerWidth / 2} y={window.innerHeight / 3.5} radius={size} fill={color} />
                 </Layer>
             </Stage>
             <Link to="/surroundings">
-        <button className="continueButton">Continue</button>
-    </Link>
+                <button className="continueButton">Continue</button>
+            </Link>
             
         </div>
-    </>
     );
 }
 
