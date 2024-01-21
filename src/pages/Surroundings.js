@@ -77,7 +77,7 @@ function Surroundings() {
             <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '36px', marginBottom: '40px', color: 'white' }}>Your Surroundings</div>
             <div style={{ fontSize: '20px', marginBottom: '20px', color: 'white' }}>Your working and living space plays a large role in your mental abilities.<br />If you feel like your space is cluttered, take a quick 10 minutes to tidy up!</div>
-            <div style={{ fontSize: '48px', color: '#333', color: 'white' }}>{`${pad(minutes)}:${pad(seconds)}`}</div>
+            <div style={{ fontSize: '48px', color: '#333' }}>{`${pad(minutes)}:${pad(seconds)}`}</div>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginRight: '80px' }}>
                 <button onClick={startTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Start</button>
                 <button onClick={pauseTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Pause</button>
