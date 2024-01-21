@@ -8,7 +8,7 @@ function Surroundings() {
   const [timerUp, setTimerUp] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [showWow, setShowWow] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState('#DDFAC0');
+  const backgroundColor = useState('#DDFAC0');
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -65,9 +65,12 @@ function Surroundings() {
         <div style={{ padding: '50px', backgroundColor: '#276E8E', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius: '30px'}}>
         {!timerUp && (
             <div style={{ textAlign: 'center' }}>
+
             <div style={{ fontSize: '36px', marginBottom: '40px', color: 'white' }}>Your Surroundings</div>
             <div style={{ fontSize: '20px', marginBottom: '20px', color: 'white' }}>Your working and living space plays a large role in your mental abilities.<br />If you feel like your space is cluttered, take a quick 10 minutes to tidy up!</div>
             <div style={{ fontSize: '48px', color: '#333', color: 'white' }}>{`${pad(minutes)}:${pad(seconds)}`}</div>
+
+            
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
                 <button onClick={startTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Start</button>
                 <button onClick={pauseTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Pause</button>

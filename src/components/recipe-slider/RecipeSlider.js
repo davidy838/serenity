@@ -44,7 +44,7 @@ function RecipeSlider() {
           return (
             <article className={position} key={id}>
               <div className="review-image-container">
-                <img src={image} alt="image" className="rev-image" />
+                <img src={image} alt="food" className="rev-image" />
               </div>
               <div className="review-text-container">
                 <i className="quote-left fas fa-quote-left"></i>
