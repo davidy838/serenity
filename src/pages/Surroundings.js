@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
+import "./Recipes.css"
+import { Link } from 'react-router-dom';
 function Surroundings() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(5);
@@ -96,8 +97,11 @@ function Surroundings() {
         </div>
     </div>
     <div style={{ position: 'fixed', bottom: '50px', right: '50px', zIndex: '999' }}>
-    <button style={{ color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '5px' }}>Next Step</button>
+    
     </div>
+    <Link to="/end">
+        <button className="continueButton">Continue</button>
+    </Link>
     </div>
     
   );
