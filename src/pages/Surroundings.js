@@ -61,7 +61,7 @@ function Surroundings() {
 
   return (
     <div style={{ backgroundColor, border: '1px solid #ccc', height: '100vh', overflow: 'hidden' }}>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', margin: 0 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', margin: 0, backgroundColor:'#DDFAC0'}}>
         <div style={{ padding: '50px', backgroundColor: '#276E8E', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius: '30px'}}>
         {!timerUp && (
             <div style={{ textAlign: 'center' }}>
@@ -72,9 +72,9 @@ function Surroundings() {
 
             
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-                <button onClick={startTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Start</button>
-                <button onClick={pauseTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Pause</button>
-                <button onClick={doneCleaning} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>I'm done!</button>
+                <button onClick={startTimer} style={{ marginRight: '10px', marginLeft: '10px', color: '#12324F', backgroundColor: '#74D47E', border: 'none', padding: '10px', borderRadius: '10px' }}>Start</button>
+                <button onClick={pauseTimer} style={{ marginRight: '10px',marginLeft: '10px', color: '#12324F', backgroundColor: '#74D47E', border: 'none', padding: '10px', borderRadius: '10px' }}>Pause</button>
+                <button onClick={doneCleaning} style={{ marginRight: '10px',marginLeft: '10px', color: '#12324F', backgroundColor: '#74D47E', border: 'none', padding: '10px', borderRadius: '10px' }}>I'm done!</button>
             </div>
             </div>
         )}
