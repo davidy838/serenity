@@ -20,6 +20,7 @@ function App() {
     <>
       <Router>
         <Header />
+        <div className="app-container" style={{ backgroundColor: '#90EE90' }}>
 
         <Routes>
           <Route exact path ='/' element={<Home />} />
@@ -33,7 +34,9 @@ function App() {
 
 
 
+
         </Routes>
+        </div>
         <Footer />
 
       </Router>
