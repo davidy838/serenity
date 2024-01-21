@@ -106,6 +106,7 @@ function Surroundings() {
         )}
         </div>
     </div>
+    </div>
     <div style={{ position: 'fixed', bottom: '50px', right: '50px', zIndex: '999' }}>
     
     </div>
