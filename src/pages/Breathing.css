@@ -6,8 +6,9 @@ button {
     margin-top: 20px;
     margin-bottom: 0;
     background: none;
-    background-color: transparent;
+    background-color: #276e8e;
     border-radius: 30%;
+    color: white
 }
 
 .breathe {
