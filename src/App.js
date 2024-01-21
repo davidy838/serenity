@@ -8,6 +8,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Surroundings from './pages/Surroundings';
 
 function App() {
   return (
@@ -15,10 +16,8 @@ function App() {
       <Router>
         <Header />
 
-
         <Routes>
           <Route exact path ='/' element={<Home />} />
-
           <Route exact path ='/breathing' element={<Breathing />}  />
           <Route exact path ='/recipes' element={<Recipes />} />
 
