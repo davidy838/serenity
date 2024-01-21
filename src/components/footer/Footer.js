@@ -1,22 +1,43 @@
 import "./Footer.css";
 import {useState} from 'react';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 
 function Footer() {
-    // State to manage the current page and progress
   const [currentPage, setCurrentPage] = useState(1);
+  const location = useLocation();
 
-  // Function to update the current page
-  const updatePage = (page) => {
-    setCurrentPage(page);
-  };
+  useEffect(() => {
+    // Update currentPage based on the current route
+
+    if (location.pathname === '/recipes') {
+      setCurrentPage(2);
+    } else if (location.pathname === '/') {
+      // Set other pages as needed
+      setCurrentPage(1);
+    } else if (location.pathname === '/breathing') {
+      // Set other pages as needed
+      setCurrentPage(3);
+    }
+    else if (location.pathname === '/surroundings') {
+      // Set other pages as needed
+      setCurrentPage(4);
+    }
+    else if (location.pathname === '/end') {
+      // Set other pages as needed
+      setCurrentPage(5);
+    }
+  }, [location]);
   return (
 
     <div className="footer">
-      <div className={`panel ${currentPage >= 1 ? 'filled' : ''}`} onClick={() => updatePage(1)}></div>
-      <div className={`panel ${currentPage >= 2 ? 'filled' : ''}`} onClick={() => updatePage(2)}></div>
-      <div className={`panel ${currentPage >= 3 ? 'filled' : ''}`} onClick={() => updatePage(3)}></div>
-      <div className={`panel ${currentPage >= 4 ? 'filled' : ''}`} onClick={() => updatePage(4)}></div>
+      <div className={`panel ${currentPage >= 1 ? 'filled' : ''}`} ></div>
+      <div className={`panel ${currentPage >= 2 ? 'filled' : ''}`} ></div>
+      <div className={`panel ${currentPage >= 3 ? 'filled' : ''}`} ></div>
+      <div className={`panel ${currentPage >= 4 ? 'filled' : ''}`} ></div>
+      <div className={`panel ${currentPage >= 5 ? 'filled' : ''}`} ></div>
     </div>
   );
     

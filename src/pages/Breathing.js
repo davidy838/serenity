@@ -1,6 +1,7 @@
 import './Breathing.css'
 import React, { useState, useRef } from 'react';
 import { Stage, Layer, Circle } from 'react-konva';
+import { Link } from 'react-router-dom';
 
 function Breathing () {
     const [size, setSize] = useState(50)
@@ -39,15 +40,23 @@ function Breathing () {
       }
 
     return (
+        <>
         <div className='breathe'>
             <p>Guided Breathing: Press down to breathe and press again to exhale. no pressure! control your own breathing</p>
             <button onMouseDown={mousedown} onMouseUp={mouseup}>breathe</button>
+
+        
             <Stage width={window.innerWidth} height={window.innerHeight} style={{ margin: 0 }}>
                 <Layer>
                     <Circle x={window.innerWidth / 2} y={window.innerHeight / 2} radius={size} fill={color} />
                 </Layer>
             </Stage>
+            <Link to="/surroundings">
+        <button className="continueButton">Continue</button>
+    </Link>
+            
         </div>
+    </>
     );
 }
 

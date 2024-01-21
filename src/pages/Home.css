@@ -1,0 +1,19 @@
+.start{
+    display: 'block';
+    margin: '20px auto'; 
+    padding: '15px 30px';
+    fontSize: '18px';
+    backgroundColor: '#4CAF50'; 
+    color: 'white';
+    borderRadius: '50px';
+    cursor: 'pointer';
+    padding: 100px 150px;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% of the viewport height */
+}
