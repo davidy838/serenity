@@ -60,7 +60,7 @@ function Surroundings() {
   };
 
   return (
-    <div style={{ backgroundColor, border: '1px solid #ccc', height: '100vh', overflow: 'hidden' }}>
+    <div style={{ backgroundColor: '#DDFAC0', border: '1px solid #ccc', height: '100vh', overflow: 'hidden' }}>
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', margin: 0 }}>
     <div style={{ 
     padding: '50px', 
@@ -79,9 +79,9 @@ function Surroundings() {
             <div style={{ fontSize: '20px', marginBottom: '20px', color: 'white' }}>Your working and living space plays a large role in your mental abilities.<br />If you feel like your space is cluttered, take a quick 10 minutes to tidy up!</div>
             <div style={{ fontSize: '48px', color: '#333' }}>{`${pad(minutes)}:${pad(seconds)}`}</div>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginRight: '80px' }}>
-                <button onClick={startTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Start</button>
-                <button onClick={pauseTimer} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>Pause</button>
-                <button onClick={doneCleaning} style={{ marginRight: '10px', color: 'white', backgroundColor: 'green', border: 'none', padding: '10px', borderRadius: '10px' }}>I'm done!</button>
+                <button onClick={startTimer} style={{ marginRight: '10px', color: '#12324F', backgroundColor: '#74D47E', border: 'none', padding: '10px', borderRadius: '10px' }}>Start</button>
+                <button onClick={pauseTimer} style={{ marginRight: '10px', color: '#12324F', backgroundColor: '#74D47E', border: 'none', padding: '10px', borderRadius: '10px' }}>Pause</button>
+                <button onClick={doneCleaning} style={{ marginRight: '10px', color: '#12324F', backgroundColor: '#74D47E', border: 'none', padding: '10px', borderRadius: '10px' }}>I'm done!</button>
             </div>
             </div>
         )}
