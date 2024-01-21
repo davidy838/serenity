@@ -10,7 +10,7 @@ function Home() {
 
       {/* Central Start Button as a Link */}
       <Link to="/recipes">
-        <button className="start">Start</button>
+        <button className="start" style={{ backgroundColor: '#4CAF50', color: 'white' }}>Start</button>
       </Link>
     </div>
   );
