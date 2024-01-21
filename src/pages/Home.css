@@ -16,4 +16,5 @@
     align-items: center;
     justify-content: center;
     height: 100vh; /* 100% of the viewport height */
+    backgroundColor: "#90EE90";
 }
