@@ -1,11 +1,12 @@
 .header {
     text-align: center;
-    background-color: green;
-    color: white;
+    background-color: #74D47E;
+    color: #12324F;
 }
 
 .h1 {
     margin: 0;
+    padding: 20px;
 }
 .link {
     text-decoration: none; /* Remove underline */
