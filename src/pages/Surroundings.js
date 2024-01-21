@@ -8,7 +8,7 @@ function Surroundings() {
   const [timerUp, setTimerUp] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [showWow, setShowWow] = useState(false);
-  const backgroundColor = useState('#DDFAC0');
+
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
